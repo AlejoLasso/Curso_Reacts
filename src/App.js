@@ -42,7 +42,8 @@ const cards =[
 function App() {
   return (
     <div>
-      <NavBar/>  
+      <NavBar/>
+      <ItemListContainer greeting='Este es un mensaje de ItemListContainer' />  
       {cards.map(({titulo,descripcion,precio,img,btnText},index)=> 
       <Card 
       key={index}
